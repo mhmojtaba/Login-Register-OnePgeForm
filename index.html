@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Login-Register Form</title>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <div class="button-box-container">
+            <button class="toggle-btn" onclick="login()">ورود</button>
+            <button class="toggle-btn" onclick="register()">ثبت نام</button>
+          </div>
+        </div>
+        <div class="social">
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-google-plus"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+        <form class="input-group" id="login">
+          <input type="text" class="input-field" placeholder="نام کاربری" />
+          <div class="toggle-password" id="toggle-password-login">
+            <div
+              class="toggle-password-login toggle"
+              onclick="showHide('password-login')"
+            >
+              <i class="far fa-eye"></i>
+              <i class="far fa-eye-slash"></i>
+            </div>
+            <input
+              type="password"
+              id="password-login"
+              class="input-field"
+              placeholder="پسورد"
+            />
+          </div>
+
+          <div class="checkbox-field">
+            <input type="checkbox" id="checkbox" placeholder="پسورد" />
+            <label for="checkbox">فراموش نکن</label>
+          </div>
+          <input type="submit" value="ورود" />
+        </form>
+        <form class="input-group" id="register">
+          <input type="text" class="input-field" placeholder="نام کاربری" />
+          <input type="text" class="input-field" placeholder="ایمیل " />
+          <div class="toggle-password">
+            <div
+              class="toggle-password-register1 toggle"
+              onclick="showHide('password-register1')"
+            >
+              <i class="far fa-eye"></i>
+              <i class="far fa-eye-slash"></i>
+            </div>
+            <input
+              type="password"
+              id="password-register1"
+              class="input-field"
+              placeholder="پسورد"
+            />
+          </div>
+          <div class="toggle-password">
+            <div
+              class="toggle-password-register2 toggle"
+              onclick="showHide('password-register2')"
+            >
+              <i class="far fa-eye"></i>
+              <i class="far fa-eye-slash"></i>
+            </div>
+            <input
+              type="password"
+              id="password-register2"
+              class="input-field"
+              placeholder=" تکرار پسورد"
+            />
+          </div>
+          <input type="submit" value="ثبت نام" />
+        </form>
+      </div>
+    </div>
+
+    <script src="js/all.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

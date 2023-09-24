@@ -1,0 +1,263 @@
+﻿@font-face {
+  font-family: "vazir";
+  src: url("../fonts/vazir.eot") format("eot"),
+    url("../fonts/vazir.ttf") format("truetype"),
+    url("../fonts/vazir.woff") format("woff"),
+    url("../fonts/vazir.woff2") format("woff2");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "vazir";
+}
+body {
+  font-family: "vazir";
+  direction: rtl;
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/1.jpg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+}
+
+/* form style */
+.hero .form-box {
+  width: 380px;
+  height: 480px;
+  background-color: #fff;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px;
+  overflow: hidden;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.button-box {
+  position: relative;
+  width: 200px;
+  margin: 35px auto;
+  box-shadow: 0 0 30px 10px rgba(255, 122, 122, 0.5);
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.button-box-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.toggle-btn {
+  background: transparent;
+  font-family: "vazir";
+  border: none;
+  padding: 10px 30px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  color: #c3e3e3;
+}
+
+#btn {
+  background: linear-gradient(rgb(241, 39, 59), rgb(211, 56, 56));
+  width: 100px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.social {
+  width: 100%;
+  display: flex;
+}
+
+.social ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social ul li {
+  margin: 0 15px;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.social ul li a svg {
+  color: #fff;
+}
+
+.social ul li a {
+  display: flex;
+}
+
+.social ul li:nth-child(1) {
+  background-color: #ff0000;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.social ul li:nth-child(2) {
+  background-color: #2424e9;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.social ul li:nth-child(3) {
+  background-color: #1eaee3;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.input-group {
+  width: 100%;
+  padding: 0 30px;
+  margin-top: 25px;
+  position: absolute;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.input-group .input-field {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px 20px;
+  border: 1px solid #777;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.input-group input[type="submit"] {
+  margin: 0 10%;
+  width: 80%;
+  border: none;
+  outline: none;
+  background-color: #f61e12;
+  color: #c3c3c3;
+  font-size: 18px;
+  padding: 7px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.checkbox-field {
+  display: flex;
+  align-items: center;
+}
+
+.input-group input[type="checkbox"] {
+  margin: 20px 0;
+  margin-right: 10px;
+}
+
+.input-group label {
+  font-size: 13px;
+  color: #999;
+  margin-right: 6px;
+}
+
+#register {
+  left: 100%;
+}
+
+/*  */
+
+.toggle-password {
+  position: relative;
+}
+
+.toggle {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  align-items: center;
+  cursor: pointer;
+}
+
+.fa-eye {
+  position: absolute;
+  font-size: 15px;
+  top: 20px;
+  right: 90%;
+}
+
+.fa-eye-slash {
+  position: absolute;
+  font-size: 15px;
+  top: 20px;
+  right: 90%;
+}
+
+/* .toggle.active .fa-eye {
+  display: none;
+} */
+
+.toggle.active .fa-eye-slash {
+  display: none;
+}
