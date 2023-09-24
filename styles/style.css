@@ -38,6 +38,7 @@ a {
 /* form style */
 .hero .form-box {
   width: 380px;
+  max-width: 380px;
   height: 480px;
   background-color: #fff;
   position: relative;
@@ -260,4 +261,18 @@ a {
 
 .toggle.active .fa-eye-slash {
   display: none;
+}
+
+@media only screen and (max-width: 380px) {
+  .form-box {
+    width: 260px !important;
+  }
+
+  .fa-eye {
+    right: 85% !important;
+  }
+
+  .fa-eye-slash {
+    right: 85% !important;
+  }
 }
